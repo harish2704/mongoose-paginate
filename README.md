@@ -52,6 +52,13 @@ MyModel.paginate({}, 2, 10, 3 function(error, pageCount, range, paginatedResults
         {% endfor %}
         <a href="?page={{ paginator.total }}" class="paginator-page">>></a> 
     </div>
+<!---
+Optional CSS
+.paginator-current {
+pointer-events: none;
+color: black;
+}
+---!>
 
 ```
 
